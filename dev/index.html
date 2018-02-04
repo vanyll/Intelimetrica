@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+  <head>
+    <title>Yelp -  Encuentra los mejores restaurantes</title>
+    <meta http-equiv="content-type" content="charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <h1>Melp</h1>
+    </header>
+    <section class="full-container">
+      <div class="map"></div>
+      <form class="main-form">
+        <h2>¡Busca tu restaurante!</h2>
+        <input type="text" name="search" id="search" placeholder="Nombre, calle, etc...">
+        <input type="submit" value="Buscar">
+      </form>
+      <div class="list-container">
+        <form class="filter-form">
+          <fieldset>
+            <label for="order">Ordenar</label>
+            <select name="order" id="order">
+              <option value="abc">A - Z</option>
+              <option value="rat">Rating</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label for="radio">Radio</label>
+            <select name="radio" id="radio">
+              <option value="100">100</option>
+              <option value="200">200</option>
+              <option value="250">250</option>
+              <option value="300">300</option>
+              <option value="400">400</option>
+              <option value="800">800</option>
+              <option value="1600">1600</option>
+            </select>
+          </fieldset>
+        </form>
+        <div class="metrics">
+          <p>Encontrados: <span>12</span></p>
+          <p>Rating promedio: <span>4.3</span></p>
+          <p>Desviación estándar: <span>4.3</span></p>
+        </div>
+        <ul class="results-list">
+          <li class="results-list-element">
+            <h3>Nombre</h3><span class="rating"><span class="active">&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></span>
+            <p>Av. Insurgentes Nte. 1788</p>
+            <p>https://federico.com</p>
+            <p>55 10299930</p>
+          </li>
+          <li class="results-list-element">
+            <h3>Nombre</h3><span></span>
+            <p>Av. Insurgentes Nte. 1788</p>
+            <p>https://federico.com</p>
+            <p>55 10299930</p>
+          </li>
+          <li class="results-list-element">
+            <h3>Nombre</h3><span></span>
+            <p>Av. Insurgentes Nte. 1788</p>
+            <p>https://federico.com</p>
+            <p>55 10299930</p>
+          </li>
+          <li class="results-list-element">
+            <h3>Nombre</h3><span></span>
+            <p>Av. Insurgentes Nte. 1788</p>
+            <p>https://federico.com</p>
+            <p>55 10299930</p>
+          </li>
+          <li class="results-list-element">
+            <h3>Nombre</h3><span></span>
+            <p>Av. Insurgentes Nte. 1788</p>
+            <p>https://federico.com</p>
+            <p>55 10299930</p>
+          </li>
+          <li class="results-list-element">
+            <h3>Nombre</h3><span></span>
+            <p>Av. Insurgentes Nte. 1788</p>
+            <p>https://federico.com</p>
+            <p>55 10299930</p>
+          </li>
+          <li class="results-list-element">
+            <h3>Nombre</h3><span></span>
+            <p>Av. Insurgentes Nte. 1788</p>
+            <p>https://federico.com</p>
+            <p>55 10299930</p>
+          </li>
+          <li class="results-list-element">
+            <h3>Nombre</h3><span></span>
+            <p>Av. Insurgentes Nte. 1788</p>
+            <p>https://federico.com</p>
+            <p>55 10299930</p>
+          </li>
+          <li class="results-list-element">
+            <h3>Nombre</h3><span></span>
+            <p>Av. Insurgentes Nte. 1788</p>
+            <p>https://federico.com</p>
+            <p>55 10299930</p>
+          </li>
+          <li class="results-list-element">
+            <h3>Nombre</h3><span></span>
+            <p>Av. Insurgentes Nte. 1788</p>
+            <p>https://federico.com</p>
+            <p>55 10299930</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1B_-E93F9fJudHtDV_X7rZjjyz-2d-Ss&amp;libraries=places"></script>
+    <script type="text/javascript" src="js/ui/map.js"></script>
+    <script type="text/javascript" src="js/ui/results.js"></script>
+    <script type="text/javascript" src="js/core/Restaurants.js"></script>
+    <script type="text/javascript" src="js/controllers/main-controller.js"></script>
+  </body>
+</html>
